@@ -1,0 +1,1551 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cake by Sophia — Luxury Celebration Cakes</title>
+    <meta
+      name="description"
+      content="Cake by Sophia creates elegant cakes for weddings, birthdays and private events. Explore the collection or enquire about your cake."
+    />
+    <meta name="theme-color" content="#F8F3EB" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23542633'/%3E%3Ccircle cx='16' cy='16' r='6' fill='none' stroke='%23D5B98C' stroke-width='1.5'/%3E%3C/svg%3E"
+    />
+
+    <!-- Fonts: Cormorant Garamond (headings) + Manrope (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="home.css" />
+    <script src="home.js" defer></script>
+  </head>
+
+  <!--
+  ==========================================================================
+  PLACEHOLDER NOTES (read before launch)
+  --------------------------------------------------------------------------
+  1. IMAGES: every cake picture on this page is an ORIGINAL SVG ILLUSTRATION
+     used as a placeholder. None of them are Cake by Sophia products.
+     To use a real photograph, replace the <svg class="photo__art"> inside a
+     ".photo__media" with:
+        <img class="photo__img" src="your-photo.jpg" alt="Describe the cake" loading="lazy">
+     and delete the matching <figcaption class="photo__tag">.
+  2. COPY: headings and short descriptions are neutral placeholder copy.
+     Replace with Sophia's real story, flavours, ordering process, etc.
+  3. PRODUCTS: names and prices are placeholders ("price placeholder").
+  4. CONTACT + SOCIAL: footer details are placeholders.
+  5. LINKS marked data-placeholder show a "coming soon" message because the
+     Shop, Gallery and About pages are not built yet.
+  ==========================================================================
+-->
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ======================================================================
+       SVG SPRITE — reusable decorations, icons and placeholder cake art
+       ====================================================================== -->
+    <svg
+      class="sprite"
+      aria-hidden="true"
+      focusable="false"
+      width="0"
+      height="0"
+    >
+      <defs>
+        <!-- Petal shapes used by the flower symbol -->
+        <path id="petal" d="M50 50C38 40 36 20 50 6C64 20 62 40 50 50Z" />
+        <path
+          id="petal-inner"
+          d="M50 50C43 43 42 32 50 22C58 32 57 43 50 50Z"
+        />
+      </defs>
+
+      <!-- Botanical sprig (line art) -->
+      <symbol id="sprig" viewBox="0 0 100 240">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M50 238C46 190 56 130 50 24" />
+          <path d="M49 196C32 192 20 178 18 160C36 162 48 176 49 196Z" />
+          <path d="M49 196C38 186 28 174 20 163" stroke-width=".7" />
+          <path d="M51 170C68 166 80 152 82 134C64 136 52 150 51 170Z" />
+          <path d="M51 170C62 160 72 150 80 137" stroke-width=".7" />
+          <path d="M50 142C34 138 24 124 22 108C38 110 49 124 50 142Z" />
+          <path d="M50 142C40 132 31 122 24 111" stroke-width=".7" />
+          <path d="M51 116C66 112 76 100 78 84C62 86 52 98 51 116Z" />
+          <path d="M51 116C61 106 69 96 76 87" stroke-width=".7" />
+          <path d="M50 88C38 84 30 74 29 60C42 62 50 74 50 88Z" />
+          <path d="M51 64C62 60 70 50 71 38C60 40 52 50 51 64Z" />
+          <path d="M50 24C44 16 44 8 50 2C56 8 56 16 50 24Z" />
+        </g>
+      </symbol>
+
+      <!-- Flower (line art with a soft tint) -->
+      <symbol id="flower" viewBox="0 0 100 100">
+        <g
+          fill="currentColor"
+          fill-opacity=".1"
+          stroke="currentColor"
+          stroke-width="1.2"
+          stroke-linejoin="round"
+        >
+          <use href="#petal" />
+          <use href="#petal" transform="rotate(60 50 50)" />
+          <use href="#petal" transform="rotate(120 50 50)" />
+          <use href="#petal" transform="rotate(180 50 50)" />
+          <use href="#petal" transform="rotate(240 50 50)" />
+          <use href="#petal" transform="rotate(300 50 50)" />
+        </g>
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1"
+          stroke-linejoin="round"
+          opacity=".7"
+        >
+          <use href="#petal-inner" transform="rotate(30 50 50)" />
+          <use href="#petal-inner" transform="rotate(90 50 50)" />
+          <use href="#petal-inner" transform="rotate(150 50 50)" />
+          <use href="#petal-inner" transform="rotate(210 50 50)" />
+          <use href="#petal-inner" transform="rotate(270 50 50)" />
+          <use href="#petal-inner" transform="rotate(330 50 50)" />
+        </g>
+        <circle cx="50" cy="50" r="4" fill="currentColor" />
+      </symbol>
+
+      <!-- Section divider ornament -->
+      <symbol id="divider" viewBox="0 0 240 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1"
+          stroke-linecap="round"
+        >
+          <path d="M2 12H96M144 12H238" />
+          <path d="M120 3L129 12L120 21L111 12Z" />
+          <path d="M120 8L124 12L120 16L116 12Z" fill="currentColor" />
+          <circle cx="101" cy="12" r="1.6" fill="currentColor" />
+          <circle cx="139" cy="12" r="1.6" fill="currentColor" />
+        </g>
+      </symbol>
+
+      <!-- Line icons -->
+      <symbol id="icon-basket" viewBox="0 0 32 32">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M7 11h18l-1.6 15H8.6z" />
+          <path d="M12 11V9a4 4 0 0 1 8 0v2" />
+        </g>
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 32 32">
+        <path
+          d="M8 8l16 16M24 8L8 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.4"
+          stroke-linecap="round"
+        />
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 32 32">
+        <path
+          d="M4 16h22M19 9l7 7-7 7"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-design" viewBox="0 0 32 32">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M7 25l1.2-5.6L21 6.6l4.4 4.4L12.6 23.8z" />
+          <path d="M18.4 9.2l4.4 4.4" />
+          <path d="M7 25l5.6-1.2" />
+        </g>
+      </symbol>
+      <symbol id="icon-whisk" viewBox="0 0 32 32">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M16 29v-9" />
+          <path d="M16 20C8 18 8 9 16 3c8 6 8 15 0 17z" />
+          <path d="M16 20c-4-4-4-11 0-17" />
+          <path d="M16 20c4-4 4-11 0-17" />
+        </g>
+      </symbol>
+      <symbol id="icon-leaf" viewBox="0 0 32 32">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M6 26C6 12 14 6 26 6c0 12-6 20-20 20z" />
+          <path d="M6 26L19 13" />
+        </g>
+      </symbol>
+      <symbol id="icon-heart" viewBox="0 0 32 32">
+        <path
+          d="M16 27C6 19.500 4 13 8 9.500c3-2.600 7-1 8 2c1-3 5-4.600 8-2c4 3.500 2 10-8 17.500z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.4"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-instagram" viewBox="0 0 32 32">
+        <g fill="none" stroke="currentColor" stroke-width="1.4">
+          <rect x="6" y="6" width="20" height="20" rx="6" />
+          <circle cx="16" cy="16" r="4.6" />
+          <circle cx="22" cy="10" r=".8" fill="currentColor" />
+        </g>
+      </symbol>
+      <symbol id="icon-facebook" viewBox="0 0 32 32">
+        <path
+          d="M18 27V17h3.400l.6-4H18v-2.200c0-1.200.5-2 2-2h2V5.400C21.600 5.300 20.500 5 19.300 5 16.600 5 14.600 6.700 14.600 9.700V13H11v4h3.600v10z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.4"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-pinterest" viewBox="0 0 32 32">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="16" cy="16" r="11" />
+          <path d="M14.200 26l2.600-10.600" />
+          <path
+            d="M12.200 16.500c-1.200-3.800 1.400-6.500 4.600-6.500c3 0 4.600 2 4.200 4.600c-.4 2.800-2.400 4.400-4.400 3.800"
+          />
+        </g>
+      </symbol>
+
+      <!-- ---------- PLACEHOLDER CAKE ILLUSTRATIONS (not real products) ---------- -->
+
+      <!-- Tiered wedding cake -->
+      <symbol id="cake-tiered" viewBox="0 0 400 480">
+        <path class="c-gold" d="M60 410h280l-14 14H74z" />
+        <path class="c-gold" d="M176 424h48l8 22H168z" />
+        <rect class="c-cake" x="80" y="320" width="240" height="90" rx="3" />
+        <path class="c-pearl" d="M88 323H312" />
+        <path class="c-gold-line" d="M80 366H320" />
+        <rect class="c-cake" x="118" y="236" width="164" height="84" rx="3" />
+        <path class="c-pearl" d="M126 239H274" />
+        <path class="c-gold-line" d="M118 280H282" />
+        <rect class="c-cake" x="152" y="164" width="96" height="72" rx="3" />
+        <path class="c-pearl" d="M160 167H240" />
+        <path class="c-gold-line" d="M152 206H248" />
+        <use
+          class="c-flower"
+          href="#flower"
+          x="86"
+          y="340"
+          width="54"
+          height="54"
+        />
+        <use
+          class="c-flower"
+          href="#flower"
+          x="262"
+          y="334"
+          width="46"
+          height="46"
+        />
+        <use
+          class="c-flower"
+          href="#flower"
+          x="204"
+          y="250"
+          width="40"
+          height="40"
+        />
+        <use
+          class="c-flower"
+          href="#flower"
+          x="128"
+          y="252"
+          width="30"
+          height="30"
+        />
+        <use
+          class="c-flower"
+          href="#flower"
+          x="176"
+          y="176"
+          width="34"
+          height="34"
+        />
+        <use
+          class="c-flower"
+          href="#sprig"
+          x="176"
+          y="60"
+          width="48"
+          height="112"
+        />
+      </symbol>
+
+      <!-- Two-layer cake with drip -->
+      <symbol id="cake-layer" viewBox="0 0 400 480">
+        <path class="c-gold" d="M50 410h300l-16 16H66z" />
+        <rect class="c-cake" x="90" y="300" width="220" height="110" rx="4" />
+        <path class="c-line c-faint" d="M90 338H310M90 372H310" />
+        <rect class="c-cake" x="90" y="212" width="220" height="88" rx="4" />
+        <path
+          class="c-burg"
+          d="M86 206Q86 194 98 194H302Q314 194 314 206V228c0 14-14 14-14 0v-4c0-10-12-10-12 0v22c0 16-16 16-16 0v-18c0-8-10-8-10 0v8c0 14-14 14-14 0v-14c0-8-12-8-12 0v26c0 16-16 16-16 0v-20c0-8-10-8-10 0v6c0 12-14 12-14 0v-4c0-8-12-8-12 0v10c0 10-12 10-12 0v-14c0-8-10-8-10 0H98Q86 226 86 218Z"
+        />
+        <circle class="c-gold" cx="132" cy="330" r="3" />
+        <circle class="c-gold" cx="258" cy="352" r="2.500" />
+        <circle class="c-gold" cx="190" cy="388" r="3" />
+        <circle class="c-gold" cx="284" cy="322" r="2" />
+        <circle class="c-burg" cx="150" cy="182" r="10" />
+        <circle class="c-burg" cx="178" cy="174" r="12" />
+        <circle class="c-gold" cx="204" cy="180" r="9" />
+        <circle class="c-burg" cx="232" cy="176" r="11" />
+        <use
+          class="c-flower"
+          href="#flower"
+          x="248"
+          y="150"
+          width="46"
+          height="46"
+        />
+        <use
+          class="c-flower"
+          href="#sprig"
+          x="100"
+          y="110"
+          width="40"
+          height="92"
+        />
+        <use
+          class="c-flower"
+          href="#flower"
+          x="116"
+          y="346"
+          width="44"
+          height="44"
+        />
+      </symbol>
+
+      <!-- Tall single-tier cake with cascading blooms -->
+      <symbol id="cake-tall" viewBox="0 0 400 480">
+        <path class="c-gold" d="M70 420h260l-14 14H84z" />
+        <rect class="c-cake" x="128" y="150" width="144" height="270" rx="4" />
+        <path class="c-gold-line" d="M128 200H272M128 360H272" />
+        <path class="c-pearl" d="M136 153H264" />
+        <path
+          class="c-line c-faint"
+          d="M150 214V346M178 214V346M206 214V346M234 214V346M260 214V346"
+        />
+        <use
+          class="c-flower"
+          href="#flower"
+          x="92"
+          y="130"
+          width="76"
+          height="76"
+        />
+        <use
+          class="c-flower"
+          href="#flower"
+          x="130"
+          y="204"
+          width="52"
+          height="52"
+        />
+        <use
+          class="c-flower"
+          href="#flower"
+          x="104"
+          y="262"
+          width="40"
+          height="40"
+        />
+        <use
+          class="c-flower"
+          href="#flower"
+          x="148"
+          y="318"
+          width="34"
+          height="34"
+        />
+        <use
+          class="c-flower"
+          href="#sprig"
+          x="206"
+          y="40"
+          width="46"
+          height="112"
+        />
+        <circle class="c-gold" cx="236" cy="260" r="3" />
+        <circle class="c-gold" cx="252" cy="296" r="2.500" />
+        <circle class="c-gold" cx="226" cy="330" r="2" />
+      </symbol>
+
+      <!-- Cupcake (used inside the events illustration) -->
+      <symbol id="cupcake" viewBox="0 0 100 120">
+        <path class="c-burg" d="M20 62h60l-8 48H28z" />
+        <path class="c-gold-line c-thin" d="M37 64l2 44M50 64v46M63 64l-2 44" />
+        <path class="c-cake" d="M14 64q0-16 36-16t36 16z" />
+        <path class="c-cake" d="M26 50q0-14 24-14t24 14z" />
+        <path class="c-cake" d="M36 38q0-12 14-24 14 12 14 24z" />
+        <circle class="c-burg" cx="50" cy="12" r="5" />
+      </symbol>
+
+      <!-- Private events: cupcake trio on a plate -->
+      <symbol id="cake-events" viewBox="0 0 400 480">
+        <use
+          class="c-flower"
+          href="#sprig"
+          x="40"
+          y="130"
+          width="60"
+          height="150"
+        />
+        <use
+          class="c-flower"
+          href="#sprig"
+          x="300"
+          y="130"
+          width="60"
+          height="150"
+        />
+        <path class="c-gold" d="M50 392h300l-16 16H66z" />
+        <use href="#cupcake" x="70" y="268" width="110" height="132" />
+        <use href="#cupcake" x="220" y="268" width="110" height="132" />
+        <use href="#cupcake" x="140" y="196" width="120" height="144" />
+        <use
+          class="c-flower"
+          href="#flower"
+          x="176"
+          y="120"
+          width="48"
+          height="48"
+        />
+      </symbol>
+
+      <!-- Top-down close-up with floral wreath -->
+      <symbol id="cake-closeup" viewBox="0 0 400 480">
+        <circle class="c-ring" cx="200" cy="240" r="176" />
+        <circle class="c-cake" cx="200" cy="240" r="136" />
+        <circle class="c-pearl" cx="200" cy="240" r="120" />
+        <circle class="c-line c-faint" cx="200" cy="240" r="92" />
+        <use
+          class="c-flower"
+          href="#flower"
+          x="260"
+          y="218"
+          width="44"
+          height="44"
+        />
+        <use
+          class="c-flower"
+          href="#flower"
+          x="237"
+          y="277"
+          width="40"
+          height="40"
+        />
+        <use
+          class="c-flower"
+          href="#flower"
+          x="178"
+          y="302"
+          width="44"
+          height="44"
+        />
+        <use
+          class="c-flower"
+          href="#flower"
+          x="118"
+          y="277"
+          width="40"
+          height="40"
+        />
+        <use
+          class="c-flower"
+          href="#flower"
+          x="96"
+          y="218"
+          width="44"
+          height="44"
+        />
+        <use
+          class="c-flower"
+          href="#flower"
+          x="118"
+          y="159"
+          width="40"
+          height="40"
+        />
+        <use
+          class="c-flower"
+          href="#flower"
+          x="178"
+          y="134"
+          width="44"
+          height="44"
+        />
+        <use
+          class="c-flower"
+          href="#flower"
+          x="237"
+          y="159"
+          width="40"
+          height="40"
+        />
+        <use
+          class="c-flower"
+          href="#flower"
+          x="160"
+          y="200"
+          width="80"
+          height="80"
+        />
+      </symbol>
+    </svg>
+
+    <!-- ======================================================================
+       A. NAVIGATION
+       ====================================================================== -->
+    <header class="site-header" id="site-header">
+      <div class="site-header__inner">
+        <a
+          class="wordmark"
+          href="#home"
+          aria-label="Cake by Sophia — back to top"
+        >
+          <svg class="wordmark__mark" width="34" height="34" aria-hidden="true">
+            <use href="#flower" />
+          </svg>
+          <span class="wordmark__text">
+            <span class="wordmark__by">Cake by</span>
+            <span class="wordmark__name">Sophia</span>
+          </span>
+        </a>
+
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <ul class="site-nav__list">
+            <li><a class="site-nav__link" href="#home">Home</a></li>
+            <li><a class="site-nav__link" href="#featured">Shop</a></li>
+            <li><a class="site-nav__link" href="#gallery">Gallery</a></li>
+            <li><a class="site-nav__link" href="#about">About</a></li>
+            <li><a class="site-nav__link" href="#contact">Contact</a></li>
+          </ul>
+          <p class="site-nav__note">Weddings · Birthdays · Private Events</p>
+        </nav>
+
+        <div class="site-header__actions">
+          <button
+            class="icon-btn cart-btn"
+            id="cart-toggle"
+            type="button"
+            aria-label="Open shopping basket"
+            aria-expanded="false"
+            aria-controls="cart-drawer"
+          >
+            <svg width="26" height="26" aria-hidden="true">
+              <use href="#icon-basket" />
+            </svg>
+            <span class="cart-btn__count" id="cart-count" hidden>0</span>
+          </button>
+          <button
+            class="burger"
+            id="menu-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="site-nav"
+          >
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ====================================================================
+         B. HERO
+         ==================================================================== -->
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero__pattern" aria-hidden="true"></div>
+
+        <!-- Floating botanical decorations (outer wrapper = parallax, inner svg = float) -->
+        <div
+          class="deco deco--hero-left"
+          data-parallax="0.06"
+          aria-hidden="true"
+        >
+          <svg class="float float--slow" width="90" height="216">
+            <use href="#sprig" />
+          </svg>
+        </div>
+        <div
+          class="deco deco--hero-right"
+          data-parallax="-0.05"
+          aria-hidden="true"
+        >
+          <svg class="float" width="70" height="168"><use href="#sprig" /></svg>
+        </div>
+
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow hero__eyebrow">
+              Patisserie · Weddings · Celebrations
+            </p>
+
+            <h1 class="hero__title" id="hero-title">
+              <span class="line line--1"><span>Cakes designed</span></span>
+              <span class="line line--2"
+                ><span>to be <em>remembered</em></span></span
+              >
+            </h1>
+
+            <p class="hero__lead">
+              Cake by Sophia creates elegant, artful cakes for the days that
+              matter most — from graceful wedding tiers to beautifully finished
+              birthday centrepieces.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#featured">
+                <span class="btn__label">Shop Now</span>
+                <svg
+                  class="btn__icon"
+                  width="20"
+                  height="20"
+                  aria-hidden="true"
+                >
+                  <use href="#icon-arrow" />
+                </svg>
+              </a>
+              <a class="link-arrow" href="#collections">
+                <span>Explore Our Collection</span>
+                <svg width="18" height="18" aria-hidden="true">
+                  <use href="#icon-arrow" />
+                </svg>
+              </a>
+            </div>
+
+            <a
+              class="hero__scroll"
+              href="#about"
+              aria-label="Scroll to the story"
+            >
+              <span class="hero__scroll-line"></span><span>Scroll</span>
+            </a>
+          </div>
+
+          <div class="hero__visual">
+            <!-- Rotating text badge -->
+            <div class="badge" aria-hidden="true">
+              <svg class="badge__ring" viewBox="0 0 120 120">
+                <path
+                  id="badge-path"
+                  d="M60 60m-44 0a44 44 0 1 1 88 0a44 44 0 1 1-88 0"
+                  fill="none"
+                />
+                <text class="badge__text">
+                  <textPath
+                    href="#badge-path"
+                    textLength="272"
+                    lengthAdjust="spacing"
+                  >
+                    CAKE BY SOPHIA · MADE FOR CELEBRATIONS ·
+                  </textPath>
+                </text>
+              </svg>
+              <svg class="badge__flower" width="40" height="40">
+                <use href="#flower" />
+              </svg>
+            </div>
+
+            <!-- Main arched image (PLACEHOLDER illustration) -->
+            <figure
+              class="photo photo--arch hero__photo-main reveal reveal--image delay-2"
+            >
+              <div class="photo__media tone-champagne">
+                <img
+    src="images/hc-1.jpeg"
+    class="photo__img"
+    alt="Elegant wedding cake"
+    loading="lazy"
+  />
+                  <use href="#cake-tiered" />
+               
+              </div>
+            </figure>
+
+            <!-- Small circular detail (PLACEHOLDER illustration) -->
+            <figure
+              class="photo photo--round hero__photo-small reveal reveal--image delay-4"
+            >
+              <div class="photo__media tone-burgundy">
+              <img
+    src="images/hc-2.jpeg"
+    class="photo__img"
+    alt="Elegant wedding cake"
+    loading="lazy"
+  />
+                  <use href="#cake-closeup" />
+                
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+         C. BRAND INTRODUCTION -- OUR STORY
+         ==================================================================== -->
+      <section
+        class="intro section section--white"
+        id="about"
+        aria-labelledby="intro-title"
+      >
+        <div class="container intro__grid">
+          <div class="intro__visual">
+            <figure
+              class="photo photo--rect intro__photo-main reveal reveal--image"
+            >
+              <div class="photo__media tone-ivory">
+                <img
+    src="images/c28.jpeg"
+    class="photo__img"
+    alt="Elegant wedding cake"
+    loading="lazy"
+  />
+                  <use href="#cake-layer" />
+                </svg>
+               
+              </div>
+            </figure>
+
+            <figure
+              class="photo photo--round intro__photo-small reveal reveal--image delay-3"
+            >
+              <div class="photo__media tone-champagne">
+               <img
+    src="images/c29.jpeg"
+    class="photo__img"
+    alt="Elegant wedding cake"
+    loading="lazy"
+  />
+                  <use href="#cake-tall" />
+                </svg>
+              </div>
+            </figure>
+
+            <p class="intro__vertical" aria-hidden="true">
+              Patisserie &amp; Celebration Cakes
+            </p>
+
+            <div
+              class="deco deco--intro"
+              data-parallax="-0.04"
+              aria-hidden="true"
+            >
+              <svg class="float float--slow" width="64" height="64">
+                <use href="#flower" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="intro__content">
+            <p class="eyebrow reveal">Our Story</p>
+            <h2 class="display reveal delay-1" id="intro-title">
+              A patisserie where <em>art</em> meets celebration
+            </h2>
+            <svg
+              class="ornament reveal delay-2"
+              width="160"
+              height="16"
+              aria-hidden="true"
+            >
+              <use href="#divider" />
+            </svg>
+            <p class="intro__text reveal delay-2">
+              Cake by Sophia is a cake studio built around beauty, care and the
+              small details that turn a dessert into a moment. Every design
+              begins with your occasion, your style and your taste.
+            </p>
+            <p class="intro__text reveal delay-3">
+              This introduction is placeholder copy. Replace it with Sophia's
+              own story, her inspirations and the way she works with each
+              client.
+            </p>
+            <p class="signature reveal delay-3" aria-label="Signed, Sophia">
+              Sophia
+            </p>
+            <a
+              class="link-arrow reveal delay-4"
+              href="#"
+              data-placeholder="The About page is coming soon."
+            >
+              <span>Meet Sophia</span>
+              <svg width="18" height="18" aria-hidden="true">
+                <use href="#icon-arrow" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+         D. FEATURED CAKES
+         ==================================================================== -->
+      <section
+        class="featured section"
+        id="featured"
+        aria-labelledby="featured-title"
+      >
+        <div class="featured__pattern" aria-hidden="true"></div>
+        <div class="container">
+          <header class="section-head section-head--split">
+            <div>
+              <p class="eyebrow reveal">The Shop</p>
+              <h2 class="display reveal delay-1" id="featured-title">
+                Featured <em>cakes</em>
+              </h2>
+            </div>
+            <p class="section-head__text reveal delay-2">
+              A small selection to set the tone. Product names, categories and
+              prices below are placeholders.
+            </p>
+          </header>
+
+          <div class="featured__grid">
+            <!-- Product 1 -->
+            <article class="product product--one">
+              <figure class="photo photo--rect reveal reveal--image">
+                <div class="photo__media tone-ivory">
+                 <div class="photo__media tone-ivory">
+  <img
+    src="images/c25.jpeg"
+    class="photo__img"
+    alt="Elegant wedding cake"
+    loading="lazy"
+  />
+</div>
+                    <use href="#cake-tiered" />
+                 
+                
+                </div>
+                <span class="product__index" aria-hidden="true">01</span>
+              </figure>
+              <div class="product__info reveal delay-1">
+                <p class="product__category">Weddings</p>
+                <h3 class="product__name">Rose Garden Tiers</h3>
+                <p class="product__price">£ — <span>price placeholder</span></p>
+                <a
+                  class="link-arrow"
+                  href="#"
+                  data-placeholder="Product pages are coming soon."
+                  aria-label="View product: Rose Garden Tiers (placeholder)"
+                >
+                  <span>View Product</span>
+                  <svg width="18" height="18" aria-hidden="true">
+                    <use href="#icon-arrow" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="product product--two">
+              <figure class="photo photo--wide reveal reveal--image delay-1">
+                <div class="photo__media tone-burgundy">
+                  <img
+    src="images/c5.jpeg"
+    class="photo__img"
+    alt="Elegant wedding cake"
+    loading="lazy"
+  />
+                    <use href="#cake-layer" />
+                  </svg>
+                 
+                </div>
+                <span class="product__index" aria-hidden="true">02</span>
+              </figure>
+              <div class="product__info reveal delay-2">
+                <p class="product__category">Birthdays</p>
+                <h3 class="product__name">Burgundy Drip Celebration</h3>
+                <p class="product__price">£ — <span>price placeholder</span></p>
+                <a
+                  class="link-arrow"
+                  href="#"
+                  data-placeholder="Product pages are coming soon."
+                  aria-label="View product: Burgundy Drip Celebration (placeholder)"
+                >
+                  <span>View Product</span>
+                  <svg width="18" height="18" aria-hidden="true">
+                    <use href="#icon-arrow" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="product product--three">
+              <figure class="photo photo--wide reveal reveal--image">
+                <div class="photo__media tone-champagne">
+                  <img
+    src="images/c26.jpeg"
+    class="photo__img"
+    alt="Elegant wedding cake"
+    loading="lazy"
+  />
+                    <use href="#cake-closeup" />
+               
+                </div>
+                <span class="product__index" aria-hidden="true">03</span>
+              </figure>
+              <div class="product__info reveal delay-1">
+                <p class="product__category">Celebration Cakes</p>
+                <h3 class="product__name">Floral Wreath Cake</h3>
+                <p class="product__price">£ — <span>price placeholder</span></p>
+                <a
+                  class="link-arrow"
+                  href="#"
+                  data-placeholder="Product pages are coming soon."
+                  aria-label="View product: Floral Wreath Cake (placeholder)"
+                >
+                  <span>View Product</span>
+                  <svg width="18" height="18" aria-hidden="true">
+                    <use href="#icon-arrow" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Product 4 -->
+            <article class="product product--four">
+              <figure class="photo photo--rect reveal reveal--image delay-1">
+                <div class="photo__media tone-white">
+                                 <img
+    src="images/c27.jpeg"
+    class="photo__img"
+    alt="Elegant wedding cake"
+    loading="lazy"
+  />
+                    <use href="#cake-tall" />
+                  </svg>
+                 
+                </div>
+                <span class="product__index" aria-hidden="true">04</span>
+              </figure>
+              <div class="product__info reveal delay-2">
+                <p class="product__category">Private Events</p>
+                <h3 class="product__name">Cascading Bloom Cake</h3>
+                <p class="product__price">£ — <span>price placeholder</span></p>
+                <a
+                  class="link-arrow"
+                  href="#"
+                  data-placeholder="Product pages are coming soon."
+                  aria-label="View product: Cascading Bloom Cake (placeholder)"
+                >
+                  <span>View Product</span>
+                  <svg width="18" height="18" aria-hidden="true">
+                    <use href="#icon-arrow" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+         E. OUR COLLECTIONS
+         ==================================================================== -->
+      <section
+        class="collections section section--burgundy"
+        id="collections"
+        aria-labelledby="collections-title"
+      >
+        <div class="scallop" aria-hidden="true"></div>
+        <div class="container">
+          <header class="section-head section-head--center">
+            <p class="eyebrow eyebrow--gold reveal">Our Collections</p>
+            <h2
+              class="display display--light reveal delay-1"
+              id="collections-title"
+            >
+              Made for every <em>occasion</em>
+            </h2>
+            <svg
+              class="ornament ornament--gold reveal delay-2"
+              width="180"
+              height="18"
+              aria-hidden="true"
+            >
+              <use href="#divider" />
+            </svg>
+          </header>
+
+          <div class="collections__list">
+            <!-- Weddings: arched frame -->
+            <article class="collection collection--weddings reveal">
+              <div class="collection__media tone-ivory">
+                <img
+                  src="images/c14.jpeg"
+                  class="photo__art"
+                  viewBox="0 0 400 480"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="img"
+                  aria-label="Placeholder illustration of a tiered wedding cake"
+                />
+                <use href="#cake-tiered" />
+              </div>
+              <div class="collection__body">
+                <span class="collection__numeral" aria-hidden="true">I</span>
+                <h3 class="collection__title">Weddings</h3>
+                <p class="collection__text">
+                  Graceful tiers and delicate floral details, designed around
+                  your day.
+                </p>
+                <a
+                  class="collection__link"
+                  href="#"
+                  data-placeholder="The Weddings collection page is coming soon."
+                >
+                  <span>Explore Weddings</span>
+                  <svg width="18" height="18" aria-hidden="true">
+                    <use href="#icon-arrow" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Birthdays: oval frame -->
+            <article class="collection collection--birthdays reveal delay-1">
+              <div class="collection__media tone-champagne">
+                <img
+                  src="images/c16.jpeg"
+                  class="photo__art"
+                  viewBox="0 0 400 480"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="img"
+                  aria-label="Placeholder illustration of a tiered wedding cake"
+                />
+                <use href="#cake-layer" />
+              </div>
+              <div class="collection__body">
+                <span class="collection__numeral" aria-hidden="true">II</span>
+                <h3 class="collection__title">Birthdays</h3>
+                <p class="collection__text">
+                  Artful centrepieces with personality, colour and a little
+                  sparkle.
+                </p>
+                <a
+                  class="collection__link"
+                  href="#"
+                  data-placeholder="The Birthdays collection page is coming soon."
+                >
+                  <span>Explore Birthdays</span>
+                  <svg width="18" height="18" aria-hidden="true">
+                    <use href="#icon-arrow" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Private Events: double-line rectangle -->
+            <article class="collection collection--events reveal delay-2">
+              <div class="collection__media tone-white">
+                <img
+                  src="images/c15.jpeg"
+                  class="photo__art"
+                  viewBox="0 0 400 480"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="img"
+                  aria-label="Placeholder illustration of a tiered wedding cake"
+                />
+                <use href="#cake-events" />
+              </div>
+              <div class="collection__body">
+                <span class="collection__numeral" aria-hidden="true">III</span>
+                <h3 class="collection__title">Private Events</h3>
+                <p class="collection__text">
+                  Elegant sweet tables and signature cakes for gatherings of
+                  every size.
+                </p>
+                <a
+                  class="collection__link"
+                  href="#"
+                  data-placeholder="The Private Events collection page is coming soon."
+                >
+                  <span>Explore Private Events</span>
+                  <svg width="18" height="18" aria-hidden="true">
+                    <use href="#icon-arrow" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+         F. WHY CHOOSE US  (neutral placeholder copy — no claims)
+         ==================================================================== -->
+      <section class="why section" id="why" aria-labelledby="why-title">
+        <div class="container why__grid">
+          <header class="why__head">
+            <p class="eyebrow reveal">The Cake by Sophia Way</p>
+            <h2 class="display reveal delay-1" id="why-title">
+              Why choose <em>Cake by Sophia</em>
+            </h2>
+            <p class="why__intro reveal delay-2">
+              Four qualities that shape every cake. Descriptions are placeholder
+              copy to be confirmed by the business.
+            </p>
+            <div class="deco deco--why" data-parallax="0.05" aria-hidden="true">
+              <svg class="float float--slow" width="84" height="200">
+                <use href="#sprig" />
+              </svg>
+            </div>
+          </header>
+
+          <ul class="why__list">
+            <li class="quality reveal">
+              <span class="quality__icon"
+                ><svg width="34" height="34" aria-hidden="true">
+                  <use href="#icon-design" /></svg
+              ></span>
+              <h3 class="quality__title">Bespoke Design</h3>
+              <p class="quality__text">
+                Each cake is shaped around your occasion, your colours and your
+                personal style.
+              </p>
+            </li>
+            <li class="quality reveal delay-1">
+              <span class="quality__icon"
+                ><svg width="34" height="34" aria-hidden="true">
+                  <use href="#icon-whisk" /></svg
+              ></span>
+              <h3 class="quality__title">Crafted with Care</h3>
+              <p class="quality__text">
+                Attention to detail in every layer, finish and decorative touch.
+              </p>
+            </li>
+            <li class="quality reveal delay-2">
+              <span class="quality__icon"
+                ><svg width="34" height="34" aria-hidden="true">
+                  <use href="#icon-leaf" /></svg
+              ></span>
+              <h3 class="quality__title">Thoughtful Flavours</h3>
+              <p class="quality__text">
+                A considered flavour selection that tastes as lovely as the cake
+                looks.
+              </p>
+            </li>
+            <li class="quality reveal delay-3">
+              <span class="quality__icon"
+                ><svg width="34" height="34" aria-hidden="true">
+                  <use href="#icon-heart" /></svg
+              ></span>
+              <h3 class="quality__title">Personal Service</h3>
+              <p class="quality__text">
+                A friendly, attentive conversation from first idea to finished
+                cake.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+         G. GALLERY PREVIEW
+         ==================================================================== -->
+      <section
+        class="gallery section section--white"
+        id="gallery"
+        aria-labelledby="gallery-title"
+      >
+        <div class="container">
+          <header class="section-head section-head--split">
+            <div>
+              <p class="eyebrow reveal">The Gallery</p>
+              <h2 class="display reveal delay-1" id="gallery-title">
+                A glimpse of <em>our work</em>
+              </h2>
+            </div>
+            <a
+              class="link-arrow reveal delay-2"
+              href="#"
+              data-placeholder="The full Gallery page is coming soon."
+            >
+              <span>View Full Gallery</span>
+              <svg width="18" height="18" aria-hidden="true">
+                <use href="#icon-arrow" />
+              </svg>
+            </a>
+          </header>
+
+          <div class="gallery__mosaic">
+            <figure class="tile tile--a reveal reveal--image">
+              <div class="tile__media tone-champagne">
+               <div class="tile__media tone-champagne">
+  <img
+    src="images/c21.jpeg"
+    class="photo__img"
+    alt="Elegant wedding cake"
+    loading="lazy"
+  />
+</div>
+                <use href="#cake-tiered" />
+              </div>
+              <figcaption class="tile__caption">
+                <span>Private Events</span>
+              </figcaption>
+            </figure>
+            <figure class="tile tile--b reveal reveal--image delay-1">
+              <div class="tile__media tone-burgundy">
+  <img
+    src="images/c19.jpeg"
+    class="photo__img"
+    alt="Close-up of a beautifully decorated cake"
+    loading="lazy"
+  />
+</div>
+              <figcaption class="tile__caption">
+                <span>Close-ups</span>
+              </figcaption>
+            </figure>
+            <figure class="tile tile--c reveal reveal--image delay-2">
+              <div class="tile__media tone-ivory">
+                 <img
+                  src="images/c18.jpeg"
+                  class="photo__art"
+                  viewBox="0 0 400 480"
+                  style="object-fit: cover"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="img"
+                  aria-label="Placeholder illustration of a tiered wedding cake"
+                />
+                 
+                </svg>
+              </div>
+              <figcaption class="tile__caption">
+                <span>Weddings</span
+                >
+              </figcaption>
+            </figure>
+            <figure class="tile tile--d reveal reveal--image delay-1">
+              <div class="tile__media tone-champagne">
+                 <img
+                  src="images/c24.jpeg"
+                  class="photo__art"
+                  viewBox="0 0 400 480"
+                  style="object-fit: cover"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="img"
+                  aria-label="Placeholder illustration of a tiered wedding cake"
+                />
+                  <use href="#cake-events" />
+              </div>
+              <figcaption class="tile__caption">
+                <span>Private Events</span
+                >
+              </figcaption>
+            </figure>
+            <figure class="tile tile--e reveal reveal--image">
+              <div class="tile__media tone-ivory">
+                <img
+                  src="images/c23.webp"
+                  class="photo__art"
+                  viewBox="0 0 400 480"
+                  style="object-fit: cover"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="img"
+                  aria-label="Placeholder illustration of a tiered wedding cake"
+                />
+              </div>
+              <figcaption class="tile__caption">
+                <span>Birthdays</span
+                >
+              </figcaption>
+            </figure>
+            <figure class="tile tile--f reveal reveal--image delay-2">
+              <div class="tile__media tone-burgundy">
+               <img
+                  src="images/c20.jpeg"
+                  class="photo__art"
+                  viewBox="0 0 400 480"
+                  style="object-fit: cover"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="img"
+                  aria-label="Placeholder illustration of a tiered wedding cake"
+                />
+                  <use href="#cake-tiered" />
+               
+              </div>
+              <figcaption class="tile__caption">
+                <span>BIRTHDAYS</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+         H. CALL TO ACTION
+         ==================================================================== -->
+      <section
+        class="cta section section--burgundy"
+        id="enquire"
+        aria-labelledby="cta-title"
+      >
+        <div class="scallop scallop--white" aria-hidden="true"></div>
+        <div class="cta__frame" aria-hidden="true"></div>
+        <div
+          class="deco deco--cta-left"
+          data-parallax="0.05"
+          aria-hidden="true"
+        >
+          <svg class="float float--slow" width="110" height="264">
+            <use href="#sprig" />
+          </svg>
+        </div>
+        <div
+          class="deco deco--cta-right"
+          data-parallax="-0.05"
+          aria-hidden="true"
+        >
+          <svg class="float" width="110" height="264">
+            <use href="#sprig" />
+          </svg>
+        </div>
+
+        <div class="container cta__inner">
+          <svg
+            class="cta__flower reveal"
+            width="56"
+            height="56"
+            aria-hidden="true"
+          >
+            <use href="#flower" />
+          </svg>
+          <h2
+            class="display display--light display--xl reveal delay-1"
+            id="cta-title"
+          >
+            Let's create something <em>beautiful</em>
+          </h2>
+          <p class="cta__text reveal delay-2">
+            Browse the collection, or tell us about your occasion and we will
+            help shape the perfect cake.
+          </p>
+          <div class="cta__actions reveal delay-3">
+            <a class="btn btn--gold" href="#featured">
+              <span class="btn__label">Explore the Collection</span>
+              <svg class="btn__icon" width="20" height="20" aria-hidden="true">
+                <use href="#icon-arrow" />
+              </svg>
+            </a>
+            <a class="btn btn--outline-light" href="#contact">
+              <span class="btn__label">Enquire About a Cake</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ======================================================================
+       I. FOOTER
+       ====================================================================== -->
+    <footer class="site-footer" id="contact">
+      <div class="container">
+        <svg
+          class="site-footer__divider"
+          width="240"
+          height="24"
+          aria-hidden="true"
+        >
+          <use href="#divider" />
+        </svg>
+
+        <div class="site-footer__grid">
+          <div class="site-footer__brand">
+            <a
+              class="wordmark wordmark--light"
+              href="#home"
+              aria-label="Cake by Sophia — back to top"
+            >
+              <svg
+                class="wordmark__mark"
+                width="40"
+                height="40"
+                aria-hidden="true"
+              >
+                <use href="#flower" />
+              </svg>
+              <span class="wordmark__text">
+                <span class="wordmark__by">Cake by</span>
+                <span class="wordmark__name">Sophia</span>
+              </span>
+            </a>
+            <p class="site-footer__tagline">
+              Luxury patisserie with a modern touch — cakes designed to be
+              remembered.
+            </p>
+            <ul class="social" aria-label="Social media (placeholders)">
+              <li>
+                <a
+                  class="social__link"
+                  href="https://www.instagram.com/cake_by_sophia/"
+                 
+                  aria-label="Instagram (placeholder)"
+                  ><svg width="22" height="22" aria-hidden="true">
+                    <use href="#icon-instagram" /></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="social__link"
+                  href="#"
+                  data-placeholder="Facebook link placeholder — add the real page URL."
+                  aria-label="Facebook (placeholder)"
+                  ><svg width="22" height="22" aria-hidden="true">
+                    <use href="#icon-facebook" /></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="social__link"
+                  href="#"
+                  data-placeholder="Pinterest link placeholder — add the real profile URL."
+                  aria-label="Pinterest (placeholder)"
+                  ><svg width="22" height="22" aria-hidden="true">
+                    <use href="#icon-pinterest" /></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <nav class="site-footer__col" aria-label="Footer navigation">
+            <h2 class="site-footer__heading">Navigate</h2>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#featured">Shop</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <nav class="site-footer__col" aria-label="Shop categories">
+            <h2 class="site-footer__heading">Shop</h2>
+            <ul>
+              <li><a href="#collections">Weddings</a></li>
+              <li><a href="#collections">Birthdays</a></li>
+              <li><a href="#collections">Private Events</a></li>
+              <li><a href="#featured">Featured Cakes</a></li>
+            </ul>
+          </nav>
+
+          <div class="site-footer__col">
+            <h2 class="site-footer__heading">Contact</h2>
+            <ul class="site-footer__contact">
+              <li>Email: <span>email@placeholder.com</span></li>
+              <li>Phone: <span>+44 7480 121424</span></li>
+              <li>Address: <span>NW2, London, United Kingdom</span></li>
+              <li>Hours: <span>Opening hours placeholder</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="site-footer__bottom">
+          <p>
+            © <span id="year">2026</span> Cake by Sophia. All rights reserved.
+          </p>
+          <a class="site-footer__top" href="#home"
+            >Back to top
+            <svg width="16" height="16" aria-hidden="true">
+              <use href="#icon-arrow" /></svg
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ======================================================================
+       SHOPPING BASKET DRAWER (interface shell — no checkout yet)
+       ====================================================================== -->
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <aside
+      class="drawer"
+      id="cart-drawer"
+      aria-labelledby="cart-title"
+      aria-hidden="true"
+    >
+      <div class="drawer__head">
+        <h2 class="drawer__title" id="cart-title">Your Basket</h2>
+        <button
+          class="icon-btn"
+          id="cart-close"
+          type="button"
+          aria-label="Close basket"
+        >
+          <svg width="26" height="26" aria-hidden="true">
+            <use href="#icon-close" />
+          </svg>
+        </button>
+      </div>
+      <div class="drawer__body">
+        <svg class="drawer__flower" width="72" height="72" aria-hidden="true">
+          <use href="#flower" />
+        </svg>
+        <p class="drawer__empty-title">Your basket is empty</p>
+        <p class="drawer__empty-text">
+          Cakes you add will appear here. Shopping and checkout will be added in
+          a later stage.
+        </p>
+        <a class="btn btn--primary" href="#featured" id="cart-explore">
+          <span class="btn__label">Explore the Collection</span>
+          <svg class="btn__icon" width="20" height="20" aria-hidden="true">
+            <use href="#icon-arrow" />
+          </svg>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Small message bar used for "coming soon" links -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
