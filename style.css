@@ -1075,10 +1075,6 @@ button {
   right: 10px;
 }
 
-.hero__photo-small .photo__media {
-  box-shadow: 0 0 0 8px var(--ivory);
-}
-
 /* Rotating text badge */
 .badge {
   position: absolute;
@@ -1164,10 +1160,6 @@ button {
   bottom: 0;
   width: 42%;
   z-index: 3;
-}
-
-.intro__photo-small .photo__media {
-  box-shadow: 0 0 0 10px var(--white);
 }
 
 .intro__vertical {
